@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computor v1</title>
+
+    <!-- twitter bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <script src="script.js"></script>
+    <style>
+        input.koef-field {
+            width: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <input id="equation" onkeyup="return check_input(this)">
+    <br>
+    <input type="button" value="Calculate!" onclick="calculate()">
+</body>
+</html>
