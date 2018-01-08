@@ -19,8 +19,12 @@ p span {
     font-size: 18px;
 }
 
+#show:hover {
+    cursor: pointer;
+}
 .more, .less {
     text-decoration: underline;
+    margin-left: 20px;
 }
 .main-field {
     border-top: 8px solid #fcc000;
