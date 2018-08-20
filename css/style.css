@@ -8,10 +8,19 @@ input.koef-field {
 body {
     background: url(../img/bg.jpg) no-repeat;
     background-size: cover;
+    height: 1200px;
 }
 p {
     font-size: 22px;
     color: #666;
+}
+a {
+    color: #777;
+}
+
+a:hover {
+    color: #fcc000;
+    text-decoration: none;
 }
 
 p span {
@@ -20,6 +29,9 @@ p span {
 }
 
 #show:hover {
+    cursor: pointer;
+}
+#show-example:hover{
     cursor: pointer;
 }
 .more, .less {
@@ -81,10 +93,19 @@ p span {
     text-align: center;
 }
 
-#details_field {
+#details_field, #example_field {
     border-left: 8px solid #fcc000;
     margin-left: 20px;
     padding: 10px;
     font-size: 18px;
     display: none;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+.example-list {
+    text-color: color: #777;
+    text-decoration: none;
 }

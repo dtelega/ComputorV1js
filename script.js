@@ -82,7 +82,7 @@ function calculate() {
             else c += 1;
         }
         else if ((equation[i].indexOf("X^") + 1)){
-            alert("The polynomial degree is stricly greater than 2 ("+equation[i]+"), I can't solve.");
+     //       alert("The polynomial degree is stricly greater than 2 ("+equation[i]+"), I can't solve.");
 //            details = "The polynomial degree is stricly greater than 2 ("+equation[i]+"), I can't solve."
             err = 1;
         }
@@ -91,8 +91,10 @@ function calculate() {
     });
     if (err === 1)
     {
-        details += "The polynomial degree is stricly greater than 2 ("+equation[i]+"), I can't solve.";
+        details = "The polynomial degree is stricly greater than 2, I can't solve.";
+        result = "The polynomial degree is stricly greater than 2, I can't solve.";
         details_field.innerHTML = details;
+        result_field.innerHTML = result;
         return; //TODO: error msg
     }
 
@@ -165,7 +167,7 @@ function calculate() {
     {
         //    a b  c
         // if 0,0,!0
-        result = "uncorrect";
+        result = "No possible solution";
     }
 
     result_field.innerHTML = result;
